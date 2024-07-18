@@ -9,4 +9,4 @@ OWNER_ID = int(os.environ.get("7432102513"))
 UPDATE_CHANNEL = os.environ.get('UPDATE_CHANNEL', '-1002072642438')
 AUTH_USERS = list(int(i) for i in os.environ.get("AUTH_USERS", "5585016974").split(" ")) if os.environ.get("AUTH_USERS") else []
 if OWNER_ID not in AUTH_USERS:
-    AUTH_USERS.append(OWNER_ID)
+    AUTH_USERS.append(5585016974)
