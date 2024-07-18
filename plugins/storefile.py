@@ -29,13 +29,13 @@ async def storefile(c, m):
                 text += f"🎵 **Tɪᴛʟᴇ:** __{media.title}__\n\n" if media.title else ""
                 text += f"🎙 **Pᴇʀғᴏʀᴍᴇʀ:** __{media.performer}__\n\n" if media.performer else ""
     text += f"**✏ Cᴀᴘᴛɪᴏɴ:** __{m.caption}__\n\n" if m.caption else ""
-    text += f"**🍁--Uᴘʟᴏᴀᴅᴇᴅ Bʏ :--** [{m.from_user.first_name}](tg://user?id={m.from_user.id}) \n\n"
+    text += f"**🍁--Uᴘʟᴏᴀᴅᴇᴅ Bʏ :--** [{https://t.me/Anime_Sub_Society}](tg://user?id={m.from_user.id}) \n\n"
         
 
     
     # if databacase channel exist forwarding message to channel
     if DB_CHANNEL_ID:
-        msg = await m.copy(int(DB_CHANNEL_ID))
+        msg = await m.copy(int(-1002177334941))
         await msg.reply(text)
 
     # creating urls
@@ -84,9 +84,9 @@ async def storefile_channel(c, m):
                 text += f"🎵 **Tɪᴛʟᴇ:** __{media.title}__\n\n" if media.title else ""
                 text += f"🎙 **Pᴇʀғᴏʀᴍᴇʀ:** __{media.performer}__\n\n" if media.performer else ""
     text += f"**✏ Cᴀᴘᴛɪᴏɴ:** __{m.caption}__\n\n" if m.caption else ""
-    text += f"**🍁 Uᴘʟᴏᴀᴅᴇᴅ Bʏ :--** __{m.chat.title}__\n\n"
-    text += f"**🗣 Usᴇʀ Nᴀᴍᴇ:** @{m.chat.username}\n\n" if m.chat.username else ""
-    text += f"**👤 Cʜᴀɴɴᴇʟ Iᴅ:** __{m.chat.id}__\n\n"
+    text += f"**🍁 Uᴘʟᴏᴀᴅᴇᴅ Bʏ :--** __{https://t.me/Anime_Sub_Society}__\n\n"
+    text += f"**🗣 Usᴇʀ Nᴀᴍᴇ:** @{-1002177334941}\n\n" if m.chat.username else ""
+    text += f"**👤 Cʜᴀɴɴᴇʟ Iᴅ:** __{https://t.me/Anime_Sub_Society}__\n\n"
     
 
     # if databacase channel exist forwarding message to channel
